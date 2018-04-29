@@ -48,7 +48,7 @@ interface ShaSet {
     sha512: Sha512Constructor
 }
 
-interface HmacConstructor { (hash: BlockHash<any>, key: any, enc?: 'hex'): Hmac }
+interface HmacConstructor { (hash: any, key: any, enc?: 'hex'): Hmac }
 interface Ripemd160Constructor { (): Ripemd160 }
 interface Sha1Constructor { (): Sha1; }
 interface Sha224Constructor { (): Sha224; }
