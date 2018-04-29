@@ -15,6 +15,7 @@ interface MessageDigest<T> {
     outSize: number
     update(msg: any, enc?: 'hex'): T
     digest(enc?: 'hex'): number[]
+    _digest(enc?: 'hex'): number[]
 }
 
 interface Hash {
